@@ -1,0 +1,82 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-right: 56px;
+    padding-top: 24px;
+    padding-bottom: 120px;
+    border-right: 1px solid rgba(0, 0, 0, 0.08);
+
+    height: 100%;
+
+    &__user {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        &-name {
+            color: var(--Dark, #0B0C0D);
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 120%;
+        }
+
+        &-settings {
+            color: var(--Primary, #40BF40);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &-avatar {
+            width: 80px;
+            height: 80px;
+        }
+
+    }
+
+    &__nav {
+
+        &-items {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            a {
+                padding: 8px;
+                border-radius: 4px;
+                transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: rgb(241, 241, 241);
+                    color: #40BF40;
+                }
+
+                &.active {
+                    color: #40BF40;
+                    background-color: rgb(237, 237, 237);
+                }
+            }
+
+        }
+
+        &-title {
+            color: var(--Dark, #0B0C0D);
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 18px;
+        }
+
+    }
+
+}

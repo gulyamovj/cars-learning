@@ -1,0 +1,117 @@
+/* Обнуление стандартных стилей браузера */
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+q,
+small,
+strong,
+sub,
+sup,
+kbd,
+samp,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+/* Исправление стандартного отображения в некоторых браузерах */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Обнуление стилей для списков */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Обнуление стилей для встроенных текстовых элементов */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Обнуление стилей для тега img */
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+/* Обнуление стилей для форм и их элементов */
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle;
+}
+
+/* Устранение инконсистентности отображения шрифтов в некоторых браузерах */
+body {
+  line-height: 1;
+}
+
+/* Исправление отступов для некоторых браузеров */
+blockquote,
+q {
+  quotes: none;
+}
+
+/* Исправление отступов для некоторых браузеров */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* Установка основных стилей для html и body */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Исправление отступов для некоторых браузеров */
+textarea {
+  overflow: auto;
+  resize: vertical;
+}

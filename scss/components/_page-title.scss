@@ -1,0 +1,14 @@
+.page-title {
+    padding: 40px 32px 24px;
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08); 
+
+    &__text {
+        color:#0B0C0D;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 40px;
+    }
+}

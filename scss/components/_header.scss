@@ -1,0 +1,123 @@
+.header {
+    display: flex;
+    flex-direction: column;
+
+    &__top {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 0 0 32px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+
+        &-left {
+            display: flex;
+            gap: 32px;
+        }
+
+        &-right {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        padding: 10px 32px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+
+    // ==================== //
+
+    &__contacts {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+
+        &-label {
+            color: var(--Dark);
+            opacity: 0.5;
+            font-family: Inter;
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 16px;
+            text-transform: uppercase;
+        }
+
+        &-phone {
+            color: var(--Dark);
+            font-family: Inter;
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 16px;
+        }
+    }
+
+    &__language {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+
+    &__user {
+        background-color: black;
+        padding: 8px 16px;
+        width: 240px;
+
+        display: flex;
+        gap: 8px;
+        justify-content: space-between;
+
+        &-label {
+            color: var(--White, #FFF);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+        }
+    }
+
+    &__navigation {
+
+        ul {
+            width: 800px;
+            display: flex;
+            justify-content: space-between;
+
+            a {
+                color: var(--Dark, #0B0C0D);
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 16px;
+                letter-spacing: 0.22px;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: #40BF40;
+                }
+
+                &.active {
+                    color: #40BF40;
+                }
+            }
+        }
+
+    }
+
+    &__commerce {
+        display: flex;
+        gap: 4px;
+
+        a {
+            padding: 12px;
+            border-radius: 50%;
+
+            &:hover {
+                background-color: #f1f1f1;
+            }
+        }
+    }
+}
