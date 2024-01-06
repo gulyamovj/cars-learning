@@ -779,6 +779,12 @@ a {
 .footer__btn {
   height: 50px;
 }
+.footer__stores-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4px;
+}
 .footer__stores-label {
   display: block;
   padding-bottom: 12px;

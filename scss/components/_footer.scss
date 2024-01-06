@@ -120,6 +120,11 @@
         height: 50px;
     }
 
+    &__stores-wrapper {
+        display: flex;
+        gap: 4px;
+    }
+
     &__stores-label {
         display: block;
         padding-bottom: 12px;
