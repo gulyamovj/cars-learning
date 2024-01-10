@@ -1,12 +1,19 @@
 .footer {
     border-top: 1px solid rgba(0, 0, 0, 0.08);
 
-    &__forward {
-        padding: 60px;
+    &__top {
+        padding: 32px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding-bottom: 60px;
     }
+
+    &__bottom {
+        padding: 32px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    // Elements Í˝ÓÔÒÒÚÆ¸˛Ç◊ı˜Â¯˘¯˘¿///÷¿
 
     &__form {
         display: flex;
@@ -18,47 +25,6 @@
             justify-content: space-between;
             gap: 12px;
             align-items: end;
-        }
-    }
-
-    &__bottom {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
-    &__bottom-wrapper{
-        padding: 60px 32px;
-
-        border-top: 1px solid rgba(0, 0, 0, 0.08);
-    }
-
-    &__nav {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-
-        &-title {
-            padding-bottom: 8px;
-
-            color: var(--Dark, #0B0C0D);
-            font-size: 11px;
-            font-weight: 500;
-            line-height: 16px;
-            text-transform: uppercase;
-        }
-
-        &-link {
-            color: var(--Dark, #0B0C0D);
-            font-family: Inter;
-            font-size: 13px;
-            font-weight: 500;
-            line-height: 16px;
-            text-transform: uppercase;
-            opacity: 0.3;
-        }
-
-        &-social {
-            margin-top: 20px;
         }
     }
 
@@ -116,16 +82,46 @@
         }
     }
 
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        &-title {
+            padding-bottom: 8px;
+
+            color: var(--Dark, #0B0C0D);
+            font-size: 11px;
+            font-weight: 500;
+            line-height: 16px;
+            text-transform: uppercase;
+        }
+
+        &-link {
+            color: var(--Dark, #0B0C0D);
+            font-family: Inter;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 16px;
+            text-transform: uppercase;
+            opacity: 0.3;
+        }
+
+        &-social {
+            margin-top: 20px;
+        }
+    }
+
     &__btn {
         height: 50px;
     }
 
-    &__stores-wrapper {
-        display: flex;
+    &__market-wrapper {
+        display: inline-flex;
         gap: 4px;
     }
 
-    &__stores-label {
+    &__market-label {
         display: block;
         padding-bottom: 12px;
 

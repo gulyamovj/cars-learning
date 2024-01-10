@@ -664,11 +664,15 @@ a {
 .footer {
   border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
-.footer__forward {
-  padding: 60px;
+.footer__top {
+  padding: 32px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-bottom: 60px;
+}
+.footer__bottom {
+  padding: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .footer__form {
   display: -webkit-box;
@@ -691,44 +695,6 @@ a {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
-}
-.footer__bottom {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.footer__bottom-wrapper {
-  padding: 60px 32px;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
-}
-.footer__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 8px;
-}
-.footer__nav-title {
-  padding-bottom: 8px;
-  color: var(--Dark, #0B0C0D);
-  font-size: 11px;
-  font-weight: 500;
-  line-height: 16px;
-  text-transform: uppercase;
-}
-.footer__nav-link {
-  color: var(--Dark, #0B0C0D);
-  font-family: Inter;
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 16px;
-  text-transform: uppercase;
-  opacity: 0.3;
-}
-.footer__nav-social {
-  margin-top: 20px;
 }
 .footer__title {
   color: var(--Dark, #0B0C0D);
@@ -776,16 +742,46 @@ a {
   line-height: 16px;
   letter-spacing: 0.26px;
 }
-.footer__btn {
-  height: 50px;
-}
-.footer__stores-wrapper {
+.footer__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+.footer__nav-title {
+  padding-bottom: 8px;
+  color: var(--Dark, #0B0C0D);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.footer__nav-link {
+  color: var(--Dark, #0B0C0D);
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  text-transform: uppercase;
+  opacity: 0.3;
+}
+.footer__nav-social {
+  margin-top: 20px;
+}
+.footer__btn {
+  height: 50px;
+}
+.footer__market-wrapper {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   gap: 4px;
 }
-.footer__stores-label {
+.footer__market-label {
   display: block;
   padding-bottom: 12px;
   margin-bottom: 8px;
