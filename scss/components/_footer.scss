@@ -87,6 +87,14 @@
         flex-direction: column;
         gap: 8px;
 
+        &-item li:not(:last-child){
+            margin-bottom: 8px;
+        }
+
+        &-social {
+            margin-top: 20px;
+        }
+
         &-title {
             padding-bottom: 8px;
 
@@ -105,10 +113,6 @@
             line-height: 16px;
             text-transform: uppercase;
             opacity: 0.3;
-        }
-
-        &-social {
-            margin-top: 20px;
         }
     }
 
